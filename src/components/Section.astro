@@ -1,0 +1,7 @@
+---
+const { bgLight } = Astro.props;
+---
+
+<section class:list={["py-40", bgLight && "bg-slate-300/5"]}>
+  <slot />
+</section>
