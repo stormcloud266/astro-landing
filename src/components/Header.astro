@@ -1,5 +1,6 @@
 ---
 import Wrapper from "./Wrapper.astro";
+import Nav from "./Nav";
 ---
 
 <header
@@ -9,10 +10,7 @@ import Wrapper from "./Wrapper.astro";
     <div class="flex items-center justify-between">
       <p>Logo</p>
 
-      <nav class="flex gap-4 font-bold uppercase text-sm">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-      </nav>
+      <Nav client:load />
     </div>
   </Wrapper>
 </header>
